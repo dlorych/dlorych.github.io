@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "03:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "lorek"
+    allow:
+      - dependency-type: "all"
+    commit-message:
+      prefix: "chore(deps)"
+      include: "scope"
